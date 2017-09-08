@@ -17,7 +17,7 @@ em{font-style:normal}
 
 .show{display:block}
 .hide{display:none}
-
+.focus {background:#b8b8b8;}
 /*---color---*/
 .c-purple{ color:#700077}
 .red{color:#ff0000}

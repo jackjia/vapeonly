@@ -141,6 +141,12 @@ $(function(){
              $(".support-detail").css({"position":"static"});
          }
      })
+
+    //  分页点击效果
+
+    // $(".page li a").click(function(){
+    //     $(this).addClass('focus')
+    // })
 })
 
 
