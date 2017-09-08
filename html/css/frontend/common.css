@@ -17,7 +17,7 @@ em{font-style:normal}
 
 .show{display:block}
 .hide{display:none}
-.focus {background:#b8b8b8;}
+.page .focus {background:#b8b8b8;}
 /*---color---*/
 .c-purple{ color:#700077}
 .red{color:#ff0000}
@@ -280,7 +280,10 @@ footer{width:100%;}
     background-color: #fff; filter: progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.12), Direction=135, Strength=5);/*for ie6,7,8*/ 
     -moz-box-shadow:0 4px 12px rgba(0, 0, 0, 0.12);/*firefox*/ 
     -webkit-box-shadow:0 4px 12px rgba(0, 0, 0, 0.12)/*webkit*/}
-
+.support-product-detail .wapper-list li:hover .icon-arrow1{-webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform: rotate(90deg);
+    -ms-transform: rotate(45deg);}
 .support-product-detail .wapper-list li p{font-size:16px;color:#333;margin-top:24px;}
 .support-product-detail .marginBottom{margin-bottom:20px;}
 .support-product-detail .arrow{margin:0 auto;font-size:9px;color:#999;}
@@ -289,6 +292,7 @@ footer{width:100%;}
 .support-product-detail .content-title{color:#333;font-size:28px;margin-bottom:56px;font-weight: lighter;}
 .support-product-detail .iconfonts1{font-size:48px}
 .support-product-detail .active1{border:1px solid #E6E6E6}
+
 
 /*---detail 3 CSS---*/
 .support-product-detail .content-param li{width:721px;border-bottom:1px solid #eaeaea;font-size:16px;color:#333;font-weight: lighter;margin-bottom:28.5px}
