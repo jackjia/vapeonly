@@ -1,0 +1,33 @@
+/*---detail 1 CSS---*/
+.inner-cons{float:left;width:300px;height:300px;}
+.inner-cons img{display: block;width:300px;height:300px;}
+.inner-cons-text{float:left;height:300px;width:700px;padding:35px 0 0 60px;}
+.support-product-detail-title{font-size:28px;color:#333;}
+.inner-cons-text p { margin-top:24px;font-size:14px;color:#333;line-height:1.4;}
+.iconfonts{float:left;font-size:16px;color:#4A9FEA;}
+.support-product-detail-link{float:left;margin-left:5px;color:#4A9FEA;}
+
+/*---detail 2 CSS---*/
+.support-detail {border-bottom:1px solid #E6E6E6;margin-bottom:51px;}
+.wapper-list {position:relative;}
+.wapper-list li{width:200px;height:150px;float:left;text-align:center;cursor:pointer;padding-top:12px;font-weight:lighter}
+.wapper-list li:hover{box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /*opera或ie9*/
+    background-color: #fff; filter: progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.12), Direction=135, Strength=5);/*for ie6,7,8*/ 
+    -moz-box-shadow:0 4px 12px rgba(0, 0, 0, 0.12);/*firefox*/ 
+    -webkit-box-shadow:0 4px 12px rgba(0, 0, 0, 0.12)/*webkit*/}
+
+.wapper-list li p{font-size:16px;color:#333;margin-top:24px;}
+.marginBottom{margin-bottom:20px;}
+.arrow{margin:0 auto;font-size:9px;color:#999;}
+.iconfonts1{margin:0 auto;}
+.line-black{width:100%;border-top:1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;padding:37.5px 0 180px 0;}
+.content-title{color:#333;font-size:28px;margin-bottom:56px;font-weight: lighter;}
+.iconfonts1{font-size:48px}
+.active1{border:1px solid #E6E6E6}
+
+/*---detail 3 CSS---*/
+.content-param li{width:721px;border-bottom:1px solid #eaeaea;font-size:16px;color:#333;font-weight: lighter;margin-bottom:28.5px}
+.content-param li:last-child{margin-bottom:0;}
+.param-cate{display:inline-block;width:150px;}
+.content-cons{display:none;}
+.active{display: block}
