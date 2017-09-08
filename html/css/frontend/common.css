@@ -242,7 +242,7 @@ footer{width:100%;}
 .products-nav li{display:inline;}
 .products-nav li .focus{color:#333}
 .products-nav li em{padding:0 32px;font-size:12px;}
-.products-box .pro-card{width:33.3%;float:left;padding: 16px 16px 0 0}
+.products-box .pro-card{width:288px;float:left;margin:32px 56px}
 
 /*---videobox---*/
 .blur{filter:blur(10px);-webkit-filter:blur(10px);-moz-filter:blur(10px);-ms-filter:blur(10px);-o-filter:blur(10px);}
