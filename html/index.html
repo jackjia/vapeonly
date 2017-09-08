@@ -22,22 +22,19 @@
         $(window).bind('scroll', function () {
             var $scroll = $(this).scrollTop();
             $(".title").each(function () {
-                num = $(this).attr("id").replace("floor","");
-                console.log(num)
+                var num = $(this).attr("id").replace("floor","");
                 var $loutitop = $("#floor" + num).offset().top-100;
-                    if ($loutitop > $scroll) {
-                        $(".focus").removeClass("focus")
-                        $("#floor" + num).addClass('focus');
-                        return false;
-                    }
+                if ($loutitop > $scroll) {
+                    $(".focus").removeClass("focus")
+                    $("#floor" + num).addClass('focus');
+                    return false;
+                }
                 else{
                     $(".focus").removeClass("focus")
                 }
             });
         })
-
     })
-
 </script>
 <body>
 <header class="public-header clearfix">
@@ -156,13 +153,10 @@
             <li><a><i class="icon-play transition-sp2"></i><img src="img/frontend/products/video-2.jpg"> </a><p>vAres Review by Choo Choo Vapes</p></li>
             <li><a><i class="icon-play transition-sp2"></i><img src="img/frontend/products/video-3.jpg"> </a><p>vAres Review by Choo Choo Vapes</p></li>
         </ul>
-        <p class="clearfix">
-            <a class="more-btn">MORE</a>
-        </p>
+        <p class="btn-row clearfix"><a class="more-btn">MORE</a></p>
     </div>
     <div class="news-floor">
        <div class="title" id="floor4">News</div>
-       <a class="arrow-left" href="javascript:"></a> <a class="arrow-right" href="javascript:"></a>
             <div class="swiper-news clearfix">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
@@ -224,6 +218,7 @@
                 </ul>
             </div>
             <div class="pagination2"></div>
+            <p class="btn-row clearfix"><a class="more-btn">MORE</a></p>
     </div>
     <div class="comments-floor">
         <div class="title" id="floor5">Buyer’s Comments</div>
