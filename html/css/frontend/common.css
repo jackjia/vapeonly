@@ -17,7 +17,7 @@ em{font-style:normal}
 
 .show{display:block}
 .hide{display:none}
-
+.focus {background:#b8b8b8;}
 /*---color---*/
 .c-purple{ color:#700077}
 .red{color:#ff0000}
@@ -47,6 +47,7 @@ em{font-style:normal}
 .wapper {width:1200px;height:auto;margin:0 auto;}
 .wapper-inner{width:1000px;margin:0 auto;}
 .cons-center{text-align:center;}
+.lineTop{margin-top:48px;}
 
 /*---top---*/
 .public-header{width:100%;}
@@ -203,7 +204,7 @@ em{font-style:normal}
 footer{width:100%;}
 
 /*---contact-box---*/
-.contact-box{width:1200px;margin:auto}
+.contact-box{width:1200px;margin:auto;}
 .subscribe-box p{color:#666;font-size:14px;text-align:center;margin:12px auto}
 .subscribe-inputgroup{display:table;margin:0 auto 50px auto}
 .subscribe-inputgroup input{width:420px;float:left;height:40px;border:1px solid #b8b8b8;padding:12px;border-right:0;border-radius: 3px 0 0 3px}
@@ -233,6 +234,7 @@ footer{width:100%;}
 .page-inwrap {float: left;position: relative;left: 50%;}
 .page {float: left;position: relative;left: -50%;}
 .page li {float: left;margin: 0 5px;}
+<<<<<<< HEAD
 .page li a {display: block;padding: 10px 17px;background: #666;color:#fff;font-size:14px;float: left;}
 .page li a:hover{background:#333;}
 
@@ -252,3 +254,78 @@ footer{width:100%;}
 .video-masker{background:rgba(0, 0, 0, .6);position:absolute;top:0;left:0;right:0;bottom:0}
 .video-close{position:absolute;right:10px;top:10px;z-index:2;}
 .video-close .icon-close{cursor:pointer;font-size:1.25em;color:#fff}
+
+.page li a {width: 36px;height: 36px;text-align: center;line-height: 36px;display: block;background: #666;color:#fff;font-size:14px;float: left;}
+.page li a:hover, a:active{background:#b8b8b8;}
+
+/* product_detail */
+.product-detail{font-size:14px;color:#333;margin-top:35px;}
+.product-detail h1{font-size:28px;color:#333;font-weight: lighter;margin-bottom:19px;text-align:center;}
+.product-detail p{line-height:20px;}
+.product-detail img{margin:16px auto;display:block;}
+.product-detail img:nth-child(1) {margin-top:42px;}
+
+/* support_product_detail */
+
+/*---detail 1 CSS---*/
+.support-product-detail{margin-top:36px;margin-bottom:178px;}
+.support-product-detail .inner-cons{float:left;width:300px;height:300px;}
+.support-product-detail .inner-cons img{display: block;width:300px;height:300px;}
+.support-product-detail .inner-cons-text{float:left;height:300px;width:700px;padding:35px 0 0 60px;}
+.support-product-detail .support-product-detail-title{font-size:28px;color:#333;}
+.support-product-detail .inner-cons-text p { margin-top:24px;font-size:14px;color:#333;line-height:1.4;}
+.support-product-detail .iconfonts{float:left;font-size:16px;color:#4A9FEA;}
+.support-product-detail .support-product-detail-link{float:left;margin-left:5px;color:#4A9FEA;}
+
+/*---detail 2 CSS---*/
+.support-product-detail .support-detail {border-bottom:1px solid #E6E6E6;margin-bottom:51px;}
+.support-product-detail .wapper-list {position:relative;}
+.support-product-detail .wapper-list li{width:200px;height:150px;float:left;text-align:center;cursor:pointer;padding-top:12px;font-weight:lighter}
+.support-product-detail .wapper-list li:hover{box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /*opera或ie9*/
+    background-color: #fff; filter: progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.12), Direction=135, Strength=5);/*for ie6,7,8*/ 
+    -moz-box-shadow:0 4px 12px rgba(0, 0, 0, 0.12);/*firefox*/ 
+    -webkit-box-shadow:0 4px 12px rgba(0, 0, 0, 0.12)/*webkit*/}
+
+.support-product-detail .wapper-list li p{font-size:16px;color:#333;margin-top:24px;}
+.support-product-detail .marginBottom{margin-bottom:20px;}
+.support-product-detail .arrow{margin:0 auto;font-size:9px;color:#999;}
+.support-product-detail .iconfonts1{margin:0 auto;}
+.support-product-detail .line-black{width:100%;border-top:1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;padding:37.5px 0 180px 0;}
+.support-product-detail .content-title{color:#333;font-size:28px;margin-bottom:56px;font-weight: lighter;}
+.support-product-detail .iconfonts1{font-size:48px}
+.support-product-detail .active1{border:1px solid #E6E6E6}
+
+/*---detail 3 CSS---*/
+.support-product-detail .content-param li{width:721px;border-bottom:1px solid #eaeaea;font-size:16px;color:#333;font-weight: lighter;margin-bottom:28.5px}
+.support-product-detail .content-param li:last-child{margin-bottom:0;}
+.support-product-detail .param-cate{display:inline-block;width:150px;}
+.support-product-detail .content-cons{display:none;}
+.support-product-detail .active{display: block;}
+
+/* about */
+.about{margin-bottom:126px;}
+.about img{display:block;width:100%;height:auto;}
+.about .about-title{font-size:24px;color:#333;text-align: center;margin-top:32px;margin-bottom:42px;}
+.about .about-description{font-size:14px;color:#999;}
+
+/* aboutnew */
+.aboutnew{margin-top:48px;margin-bottom:158px;}
+.aboutnew .about-new-list li {padding:0 22px 0 24px;cursor:pointer;}
+.aboutnew .about-new-list li:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /*opera或ie9*/
+    background-color: #fff; filter: progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.12), Direction=135, Strength=5);/*for ie6,7,8*/ 
+    -moz-box-shadow:0 4px 12px rgba(0, 0, 0, 0.12);/*firefox*/ 
+    -webkit-box-shadow:0 4px 12px rgba(0, 0, 0, 0.12)/*webkit*/
+}
+.aboutnew .about-new-cons {float:left;margin-top:44px;}
+.aboutnew .about-new-imgs {float:right;width:200px;height:130px;margin:48px 0 24px 0;}
+.aboutnew .about-new-data {float:left;}
+.aboutnew .about-new-day {font-size:28px;color:#999;display: block;}
+.aboutnew .about-new-year {font-size:16px;color:#999;display: block;}
+.aboutnew .splice-line {width:40px;height:1px;background: #BFBFBF;float:left;margin:19px 24px}
+.aboutnew .about-new-title{float:left;margin-top:4px;font-size:20px;color:#333;width:600px;}
+.aboutnew .arrows{color:#C5C5C5;margin:0 97px 0 27px;float:left;background:#fff;width:36px;height:30px;line-height:30px;text-align:center;vertical-align: middle;}
+.aboutnew .about-new-description{font-size:14px;color:#B8B8B8;width:600px;float:left;line-height:17px;}
+.aboutnew .about-new-consBottom{margin-top:13px;}
+.aboutnew .listActive{color:#333}
+.aboutnew .listActive1{width:70px;background: #333;}
