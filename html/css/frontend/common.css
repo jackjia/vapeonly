@@ -355,3 +355,20 @@ footer{width:100%;}
 .pro-vedio:hover .pro-btn em{opacity:1;}
 .pro-vedio:hover .pro-btn a{opacity: 1;left:10px;}
 .vedio .video-box li{margin-bottom:24px;}
+
+/* support */
+.support{margin-bottom:466px}
+.support-banner {background:#F3E3D4;}
+.support-banner img{margin:0 auto;width:1000px;height:200px;}
+.support .support-title {font-size:24px;color:#333;text-align:center;margin:63px 0 48px 0;}
+.support .support-list .list-title{border:1px solid #d8d8d8;width:100px;height:46px;text-align:center;line-height:46px;font-size:24px;color:#333;margin:0 auto;margin-top:48px;margin-bottom:15px;}
+.support .pro-btn{bottom: -12px;}
+.support .contact-list{margin-right:59px}
+.support .product-floor li{height:320px;}
+.support .support-describe{font-size:14px;color:#333;width:690px;text-align:center;margin:0 auto;margin-top:20px;margin-bottom:27px;}
+.support .contact-info{width:575px;margin:0 auto;}
+.support .contact-list, .support .icon-tel, .support .tel-info,.icon-emial{float:left;}
+.support .icon-emial {font-size:42px;color:#d8d8d8}
+.support .tel-info{font-size:14px;color:#333;}
+.support .icon-tel, .support .icon-emial {margin-right:16px;}
+.support .tel-info p{padding:2px 0;display: block}
