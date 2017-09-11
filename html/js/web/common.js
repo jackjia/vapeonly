@@ -54,7 +54,6 @@ $(function() {
     // 滑到一定高度 固定定位
     if ($(".support-detail").length > 0) {
     var navH = $(".support-detail").offset().top;
-
     $(window).scroll(function () {
         //获取滚动条的滑动距离
         var scroH = $(this).scrollTop();
