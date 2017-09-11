@@ -23,6 +23,8 @@ $.fn.bannerRoll=function(obj,pagination) {
         mySwiper.startAutoplay();
     })
 }
+
+
 //video openWindow
 $.fn.videoWindow=function(url) {
     $("header,main,footer").addClass("blur")
@@ -41,6 +43,7 @@ $.fn.videoWindow=function(url) {
 }
 
 $(function() {
+
     //  选项卡效果
     $(".wapper-list li").eq(0).addClass('active1');
     $(".wapper-list li").click(function () {
