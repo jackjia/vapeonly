@@ -328,3 +328,14 @@ footer{width:100%;}
 .aboutnew .about-new-list li:hover .icon-arrow1{background:#333;color:#fff}
 .aboutnew .listActive{color:#333}
 .aboutnew .listActive1{width:70px;background: #333;}
+
+/* securitycode */
+.securitycode .bg-img{width:100%;height:auto;margin-bottom:56px;}
+.securitycode h1{font-size:24px;color:#333;text-align:center;}
+.securitycode .relaty-code{margin:0 auto;margin-top:20px;margin-bottom:17px}
+.securitycode .subscribe-inputgroup input{width:521px}
+
+.securitycode .subscribe-inputgroup button{background:#00B5F4}
+.securitycode .subscribe-inputgroup{margin: 0 auto 24px auto;}
+.securitycode ul{width:591px;margin:0 auto;margin-bottom:852px;}
+.securitycode ul li{font-size:13px;color:#999;}
