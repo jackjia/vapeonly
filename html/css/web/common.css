@@ -30,6 +30,7 @@ em{font-style:normal}
 /*---btn---*/
 .btn-row{width:1200px;margin:0 auto}
 .btn-gray{padding:10px 40px;background:#f2f2f2;color:#333}
+.btn-orange{padding:12px 24px;border-radius:3px;background:#eb8025;color:#fff}
 .more-btn{float:right;position:relative;padding:12px 32px;display:block;background:#fff;}
 .more-btn .icon-arrow1{position: absolute;right:40px;top:14px;opacity: 0}
 .more-btn:hover{background: #f2f2f2;padding-right:50px;color:#333}
@@ -250,7 +251,7 @@ footer{width:100%;}
 .products-nav li{display:inline;}
 .products-nav li .focus{color:#333}
 .products-nav li em{padding:0 32px;font-size:12px;}
-.products-box .pro-card{width:33.3%;float:left;padding: 16px 16px 0 0}
+.products-box .pro-card{width:288px;float:left;margin:32px 56px}
 
 /*---videobox---*/
 .blur{filter:blur(10px);-webkit-filter:blur(10px);-moz-filter:blur(10px);-ms-filter:blur(10px);-o-filter:blur(10px);}
@@ -267,6 +268,11 @@ footer{width:100%;}
 .product-detail p{line-height:20px;}
 .product-detail img{margin:16px auto;display:block;}
 .product-detail img:nth-child(1) {margin-top:42px;}
+.product-detail-wrapper{position: relative;overflow: hidden;width:100%;max-height:560px;margin-top:32px}
+.product-detail-wrapper li{display:table;max-height: 500px;}
+.product-detail-wrapper li a{display:table-cell;vertical-align: middle}
+.product-detail-wrapper img{max-height:500px;margin:auto}
+.product-detail-wrapper:hover .arrow-left,.product-detail-wrapper:hover .arrow-right{display:block}
 
 /* support_product_detail */
 
@@ -383,19 +389,29 @@ footer{width:100%;}
 /* feedback */
 .feedback-box{width:100%;padding-bottom:112px;border-bottom:1px solid #e8e8e8}
 .feedback-banner{height:200px;width:100%;margin-bottom:56px;background:url(../../images/web/feedback-bg.jpg) center top}
- .feedback-box h1{font-size:24px;text-align: center;margin-bottom:24px;}
- .c-lang{font-size:14px;text-align: center;margin-bottom:24px;}
- .c-lang a.focus{background:#f8f4d8;border:1px solid #eb8025;cursor: default}
- .form-horizontal{width:100%}
- .form-group{margin-bottom:20px}
- .form-group .control-label{width:100%;text-align: right;padding-right:10px;line-height:26px;}
-.form-control{width:100%;box-sizing:border-box;height: 38px; padding:6px;font-size: 14px;line-height: 1.5;color: #555;background-color:#fff; border: 1px solid #ccc;border-radius: 4px;transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;}
- textarea.form-control{height:100px}
- .form-control:hover{border:1px solid #ff8400}
- .form-file{width:100%;box-sizing:border-box; padding:6px;font-size: 12px;line-height: 1.5;color: #555;background-color:#fff; border:0}
- .form-col-2{float:left;width:50%;padding-right:20px;box-sizing: border-box;}
- .form-col-2:last-child{padding:0px;}
- .form-horizontal .btn-orange{display:block;margin:auto}
+.feedback-box h1{font-size:24px;text-align: center;margin-bottom:24px;}
+.c-lang{font-size:14px;text-align: center;margin-bottom:24px;}
+.c-lang a.focus{background:#f8f4d8;border:1px solid #eb8025;cursor: default}
+.c-lang a{display:inline-block;color:#333;cursor:pointer;margin-left:16px;vertical-align: middle;padding:4px 8px;border:1px solid #d8d88d}
+.c-lang a:hover{border:1px solid #eb8025;color:#eb8025}
+.c-lang a.focus:hover{border:1px solid #eb8025;color:#333}
+
+.feedback-box .form-horizontal{width:600px;margin:auto}
+/* form-horizontal */
+.form-horizontal{width:100%}
+.form-group{margin-bottom:20px}
+.form-group .control-label{width:100%;text-align: right;padding-right:10px;line-height:26px;}
+.form-control{width:100%;box-sizing:border-box;height: 38px; padding:6px;font-size: 14px;line-height: 1.5;color: #555;background-color:#fff; border: 1px solid #ccc;border-radius: 4px;}
+textarea.form-control{height:100px}
+.form-control:hover{border:1px solid #ff8400}
+.form-file{width:100%;box-sizing:border-box; padding:6px;font-size: 12px;line-height: 1.5;color: #555;background-color:#fff; border:0}
+.form-col-1{float:left;width:100%}
+.form-col-1 .form-control:nth-of-type(2){margin-top:16px;}
+.form-col-2{float:left;width:50%;padding-right:20px;box-sizing: border-box;}
+.form-col-2:last-child{padding:0px;}
+.form-horizontal .btn-orange{display:block;margin:auto}
 .error-tips{color:#ff0000;float:left;line-height:18px;margin:5px 0px}
+
 .securitycode ul{width:591px;margin:0 auto;margin-bottom:440px;}
 .securitycode ul li{font-size:13px;color:#999;}
+
