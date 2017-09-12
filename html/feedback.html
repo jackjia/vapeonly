@@ -22,6 +22,11 @@
         $(".video-box li").click(function () {
             $(this).videoWindow($(this).find("img").attr("video-url"))
         });
+        $(".lan").eq(0).addClass('feed-active');
+        $(".c-lang a").click(function(){
+            $(this).addClass('focus').siblings().removeClass('focus')
+            $(".lan").eq($(this).index()).addClass('feed-active').siblings().removeClass('feed-active');
+        })
     })
 </script>
 <body>
@@ -32,12 +37,12 @@
         <ul>
             <li>
                 <div class="top-nav-button">
-                <a href="#">ABOUT</a>
-                <ul class="top-dropmenu transition-sp3">
-                    <li><a href="#">About Us</a><em>/</em></li>
-                    <li><a href="#">News</a><em>/</em></li>
-                    <li><a href="#">Honors</a></li>
-                </ul>
+                    <a href="#">ABOUT</a>
+                    <ul class="top-dropmenu transition-sp3">
+                        <li><a href="#">About Us</a><em>/</em></li>
+                        <li><a href="#">News</a><em>/</em></li>
+                        <li><a href="#">Honors</a></li>
+                    </ul>
                 </div>
             </li>
             <li>
@@ -73,79 +78,160 @@
     <div class="feedback-box">
         <div class="feedback-banner"></div>
         <h1>Customer Feedback</h1>
-        <p class="c-lang">Language:<a href="#" class="focus">English</a><a href="#">Japanese</a></p>
-        <form class="form-horizontal">
-            <div class="form-group clearfix">
-                <div class="form-col-1">
-                    <label class="control-label">*Name:</label>
-                    <input type="text" placeholder="" class="form-control" />
+        <p class="c-lang">Language:<a href="javascript:;" class="focus">English</a><a href="javascript:;">Japanese</a></p>
+        <div class="lan">
+            <form class="form-horizontal">
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Name:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
                 </div>
-            </div>
-            <div class="form-group clearfix">
-                <div class="form-col-1">
-                    <label class="control-label">*Email:</label>
-                    <input type="text" placeholder="" class="form-control" />
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Email:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
+                    <div class="error-tips">dadada daa dada1da d ad a da d asd</div>
                 </div>
-                <div class="error-tips">dadada daa dada1da d ad a da d asd</div>
-            </div>
-            <div class="form-group clearfix">
-                <div class="form-col-2">
-                    <label class="control-label">*Country:</label>
-                    <input type="text" placeholder="" class="form-control" />
+                <div class="form-group clearfix">
+                    <div class="form-col-2">
+                        <label class="control-label">*Country:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
+                    <div class="form-col-2">
+                        <label class="control-label">*Area:</label>
+                        <select class="form-control">
+                            <option>Please select</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-col-2">
-                    <label class="control-label">*Area:</label>
-                    <select class="form-control">
-                        <option>Please select</option>
-                    </select>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">Telephone:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
                 </div>
-            </div>
-            <div class="form-group clearfix">
-                <div class="form-col-1">
-                    <label class="control-label">Telephone:</label>
-                    <input type="text" placeholder="" class="form-control" />
-                </div>
-            </div>
-            <div class="form-group clearfix">
-                <div class="form-col-1">
-                    <label class="control-label">*Product Name:</label>
-                    <select class="form-control">
-                        <option>Please select</option>
-                        <option>vPipe</option>
-                        <option>vCat</option>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Product Name:</label>
+                        <select class="form-control">
+                            <option>Please select</option>
+                            <option>vPipe</option>
+                            <option>vCat</option>
 
+                        </select>
+                        <select class="mt-10 form-control">
+                            <option>vPipe II </option>
+                            <option>vPipe II </option>
+                            <option>vPipe III</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Purchase Date:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Upload Attachment:</label>
+                        <input type="file" class="form-file" />
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">Description:</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <button class="btn-orange" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="lan">
+            <form class="formrun form-horizontal" action="https://form.run/api/v1/r/8HtiyaXMdc98X0x4Fe7P" method="post" enctype="multipart/form-data">
+                <!-- ↓自由に要素を追加・編集することができます -->
+                <div class="form-group">
+                    <label class="control-label"><font><font>名お前</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <input name="お名前" type="text" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
+                    <div class="formrun-attention" data-formrun-show-if-error="お名前">お名前を入力してください</div>
+                </div>
+            
+                <div class="form-group">
+                    <label class="control-label"><font><font>ーメルアドレス</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
+                    <div class="formrun-attention" data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                </div>
+            
+                <div class="form-group">
+                    <label class="control-label"><font><font>名制品</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+            
+                    <select name="製品カテゴリー" id="category" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
+                        <option value=""><font><font>制品カテゴリーを选択してください</font></font></option>
+                                        <option id="1" value="スターターキット"><font><font>スターターキット</font></font></option>
+                                        <option id="3" value="テクニカルMOD"><font><font>テクニカルMOD</font></font></option>
+                                        <option id="4" value="アトマイザー"><font><font>アトマイザー</font></font></option>
+                                        <option id="5" value="その他"><font><font>その他</font></font></option>
+                                </select>
+                    <div class="formrun-attention" data-formrun-show-if-error="製品カテゴリー">製品カテゴリーを選択してください</div>
+            
+                    <select name="製品名" id="product" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="mt-10 form-control">
+                        <option value=""><font><font>制品名を选択してください</font></font></option>
+            
                     </select>
-                    <select class="mt-10 form-control">
-                        <option>vPipe II </option>
-                        <option>vPipe II </option>
-                        <option>vPipe III</option>
-                    </select>
+                    <div class="formrun-attention" data-formrun-show-if-error="製品名">製品名を選択してください</div>
                 </div>
-            </div>
-            <div class="form-group clearfix">
-                <div class="form-col-1">
-                    <label class="control-label">*Purchase Date:</label>
-                    <input type="text" placeholder="" class="form-control" />
+            
+                <div class="form-group">
+                    <label class="control-label"><font><font>店铺购入名</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <input name="購入店舗名" type="text" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
+                    <div class="formrun-attention" data-formrun-show-if-error="購入店舗名">購入店舗名を入力してください</div>
                 </div>
-            </div>
-            <div class="form-group clearfix">
-                <div class="form-col-1">
-                    <label class="control-label">*Upload Attachment:</label>
-                    <input type="file" class="form-file" />
+            
+                <div class="form-group">
+                    <label class="control-label"><font><font>日购入</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <input name="購入日" type="text" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
+                    <div class="formrun-attention" data-formrun-show-if-error="購入日">購入日を入力してください</div>
+                    <div class="note"><font><font>日付形式：2017年6月24日</font></font></div>
                 </div>
-            </div>
-            <div class="form-group clearfix">
-                <div class="form-col-1">
-                    <label class="control-label">Description:</label>
-                    <textarea class="form-control"></textarea>
+            
+                <div class="form-group">
+                    <label class="control-label"><font><font>问おいわ合せの详细</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <textarea name="お問い合わせの詳細" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control"></textarea>
+                    <div class="formrun-attention" data-formrun-show-if-error="お問い合わせの詳細">お問い合わせの詳細を入力してください</div>
+                    <div class="note"><font><font>お问い合わせや発生した不具合の内容をできるだけ详しくお书きください。</font></font></div>
                 </div>
-            </div>
-            <div class="form-group clearfix">
-                <div class="form-col-1">
-                    <button class="btn-orange" type="button">Subscribe</button>
+            
+                <div class="form-group">
+                    <label class="control-label"><font><font>保修カード（保证书）画像の</font></font><span class="tag tag-default"><font><font>任意</font></font></span></label>
+                    <input name="Warrantyカード（保証書）の画像" type="file" class="form-control">
+                    <div class="note"><font><font>シリアルナンバーがわかる保修カード（保证书）の画像を添付してください。</font></font></div>
                 </div>
-            </div>
-        </form>
+            
+                <div class="form-group">
+                    <label class="control-label"><font><font>シレートまたは纳品书の画像</font></font><span class="tag tag-default"><font><font>任意</font></font></span></label>
+                    <input name="レシートまたは納品書の画像" type="file" class="form-control">
+                    <div class="note"><font><font>购入日がわかるレシートまたは纳品书の画像を添付してください。</font></font></div>
+                </div>
+            
+                <div class="form-group">
+                    <label class="control-label"><font><font>具不合箇所の画像</font></font><span class="tag tag-default"><font><font>任意</font></font></span></label>
+                    <input name="不具合箇所の画像" type="file" class="form-control">
+                    <div class="note"><font><font>不具合の状况がわかる画像を添付してください。</font></font></div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <button class="btn-orange" type="button">Subscribe</button>
+                    </div>
+                </div>
+              
+            </form>
+        </div>
     </div>
 </main>
 <footer class="footer transition4">
