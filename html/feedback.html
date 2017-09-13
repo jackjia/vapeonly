@@ -11,17 +11,10 @@
 <link href="css/web/idangerous.swiper.css" type="text/css" rel="stylesheet" />
 <link href="css/web/icon.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/web/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/web/idangerous.swiper.min.js"></script>
 <script type="text/javascript" src="js/web/common.js"></script>
 </head>
 <script>
     $(function () {
-        $(".banner-wrapper").bannerRoll(".swiper-banner",".pagination");
-        $(".news-floor").bannerRoll(".swiper-news",".pagination2");
-        $(".comments-wrapper").bannerRoll(".swiper-comments",".pagination3");
-        $(".video-box li").click(function () {
-            $(this).videoWindow($(this).find("img").attr("video-url"))
-        });
         $(".lan").eq(0).addClass('feed-active');
         $(".c-lang a").click(function(){
             $(this).addClass('focus').siblings().removeClass('focus')
@@ -157,72 +150,72 @@
             <form class="formrun form-horizontal" action="https://form.run/api/v1/r/8HtiyaXMdc98X0x4Fe7P" method="post" enctype="multipart/form-data">
                 <!-- ↓自由に要素を追加・編集することができます -->
                 <div class="form-group">
-                    <label class="control-label"><font><font>名お前</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <label class="control-label"><span><span>名お前</span></span><span class="tag tag-danger"><span><span>必须</span></span></span></label>
                     <input name="お名前" type="text" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
                     <div class="formrun-attention" data-formrun-show-if-error="お名前">お名前を入力してください</div>
                 </div>
             
                 <div class="form-group">
-                    <label class="control-label"><font><font>ーメルアドレス</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <label class="control-label"><span><span>ーメルアドレス</span></span><span class="tag tag-danger"><span><span>必须</span></span></span></label>
                     <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
                     <div class="formrun-attention" data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
                 </div>
             
                 <div class="form-group">
-                    <label class="control-label"><font><font>名制品</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <label class="control-label"><span><span>名制品</span></span><span class="tag tag-danger"><span><span>必须</span></span></span></label>
             
                     <select name="製品カテゴリー" id="category" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
-                        <option value=""><font><font>制品カテゴリーを选択してください</font></font></option>
-                                        <option id="1" value="スターターキット"><font><font>スターターキット</font></font></option>
-                                        <option id="3" value="テクニカルMOD"><font><font>テクニカルMOD</font></font></option>
-                                        <option id="4" value="アトマイザー"><font><font>アトマイザー</font></font></option>
-                                        <option id="5" value="その他"><font><font>その他</font></font></option>
+                        <option value=""><span><span>制品カテゴリーを选択してください</span></span></option>
+                                        <option id="1" value="スターターキット"><span><span>スターターキット</span></span></option>
+                                        <option id="3" value="テクニカルMOD"><span><span>テクニカルMOD</span></span></option>
+                                        <option id="4" value="アトマイザー"><span><span>アトマイザー</span></span></option>
+                                        <option id="5" value="その他"><span><span>その他</span></span></option>
                                 </select>
                     <div class="formrun-attention" data-formrun-show-if-error="製品カテゴリー">製品カテゴリーを選択してください</div>
             
                     <select name="製品名" id="product" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="mt-10 form-control">
-                        <option value=""><font><font>制品名を选択してください</font></font></option>
+                        <option value=""><span><span>制品名を选択してください</span></span></option>
             
                     </select>
                     <div class="formrun-attention" data-formrun-show-if-error="製品名">製品名を選択してください</div>
                 </div>
             
                 <div class="form-group">
-                    <label class="control-label"><font><font>店铺购入名</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <label class="control-label"><span><span>店铺购入名</span></span><span class="tag tag-danger"><span><span>必须</span></span></span></label>
                     <input name="購入店舗名" type="text" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
                     <div class="formrun-attention" data-formrun-show-if-error="購入店舗名">購入店舗名を入力してください</div>
                 </div>
             
                 <div class="form-group">
-                    <label class="control-label"><font><font>日购入</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <label class="control-label"><span><span>日购入</span></span><span class="tag tag-danger"><span><span>必须</span></span></span></label>
                     <input name="購入日" type="text" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control">
                     <div class="formrun-attention" data-formrun-show-if-error="購入日">購入日を入力してください</div>
-                    <div class="note"><font><font>日付形式：2017年6月24日</font></font></div>
+                    <div class="note"><span><span>日付形式：2017年6月24日</span></span></div>
                 </div>
             
                 <div class="form-group">
-                    <label class="control-label"><font><font>问おいわ合せの详细</font></font><span class="tag tag-danger"><font><font>必须</font></font></span></label>
+                    <label class="control-label"><span><span>问おいわ合せの详细</span></span><span class="tag tag-danger"><span><span>必须</span></span></span></label>
                     <textarea name="お問い合わせの詳細" data-formrun-required="true" data-formrun-class-if-error="form-control-danger" class="form-control"></textarea>
                     <div class="formrun-attention" data-formrun-show-if-error="お問い合わせの詳細">お問い合わせの詳細を入力してください</div>
-                    <div class="note"><font><font>お问い合わせや発生した不具合の内容をできるだけ详しくお书きください。</font></font></div>
+                    <div class="note"><span><span>お问い合わせや発生した不具合の内容をできるだけ详しくお书きください。</span></span></div>
                 </div>
             
                 <div class="form-group">
-                    <label class="control-label"><font><font>保修カード（保证书）画像の</font></font><span class="tag tag-default"><font><font>任意</font></font></span></label>
+                    <label class="control-label"><span><span>保修カード（保证书）画像の</span></span><span class="tag tag-default"><span><span>任意</span></span></span></label>
                     <input name="Warrantyカード（保証書）の画像" type="file" class="form-control">
-                    <div class="note"><font><font>シリアルナンバーがわかる保修カード（保证书）の画像を添付してください。</font></font></div>
+                    <div class="note"><span><span>シリアルナンバーがわかる保修カード（保证书）の画像を添付してください。</span></span></div>
                 </div>
             
                 <div class="form-group">
-                    <label class="control-label"><font><font>シレートまたは纳品书の画像</font></font><span class="tag tag-default"><font><font>任意</font></font></span></label>
+                    <label class="control-label"><span><span>シレートまたは纳品书の画像</span></span><span class="tag tag-default"><span><span>任意</span></span></span></label>
                     <input name="レシートまたは納品書の画像" type="file" class="form-control">
-                    <div class="note"><font><font>购入日がわかるレシートまたは纳品书の画像を添付してください。</font></font></div>
+                    <div class="note"><span><span>购入日がわかるレシートまたは纳品书の画像を添付してください。</span></span></div>
                 </div>
             
                 <div class="form-group">
-                    <label class="control-label"><font><font>具不合箇所の画像</font></font><span class="tag tag-default"><font><font>任意</font></font></span></label>
+                    <label class="control-label"><span><span>具不合箇所の画像</span></span><span class="tag tag-default"><span><span>任意</span></span></span></label>
                     <input name="不具合箇所の画像" type="file" class="form-control">
-                    <div class="note"><font><font>不具合の状况がわかる画像を添付してください。</font></font></div>
+                    <div class="note"><span><span>不具合の状况がわかる画像を添付してください。</span></span></div>
                 </div>
                 <div class="form-group clearfix">
                     <div class="form-col-1">
