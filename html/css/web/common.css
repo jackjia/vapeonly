@@ -8,13 +8,22 @@ body{font-family: proxima_nova,Helvetica,Tahoma,Arial;font-size:16px;font-weight
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { -webkit-box-shadow:0 0 0 1000px white inset; border-bottom:1px solid rgba(0,0,0,0.54)}
 button, input, select, textarea, img, .button {vertical-align: middle; outline: 0}
 button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer}
+select{appearance:none; -moz-appearance:none;-webkit-appearance:none;padding-right: 14px;}
+select::-ms-expand { display: none; }
+
+.banner_list_icons{position:relative;}
+.banner_list_icon{position: absolute;left:0;top:0;position: relative;background:url(../../images/web/arrow-down.svg) 100% 50% no-repeat;}
+.banner_list_icona:hover{
+    /* -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); */
+}
 .clearfix:after{ content:""; clear:both; display:block; height:0}
 li{list-style:none}
 a{ color:#999; text-decoration:none; cursor:pointer; outline:0}
 a:hover{color:#e47e10}
 em{font-style:normal}
 .bold{ font-weight:600}
-.lan{display: none;}
 .show{display:block}
 .hide{display:none}
 .page .focus {background:#b8b8b8;}
@@ -428,8 +437,20 @@ footer{width:100%;}
     vertical-align: baseline;
     border-radius: 18px;
 }
-
+.feedback-box .des-detail{font-size:13px;color:#B8B8B8;}
+.feedback-box .file-list{width:140px;height:140px;border:1px solid #e6e6e6;position:relative;margin:16px 0}
+.feedback-box .file-list img{width:100%;height:auto;}
+.feedback-box .file-list .icon-arrow1{display:block;width:12px;height:9px;text-align:center;line-height:9px;position:absolute;bottom:2px;right:2px;background:#00B5F4;border-radius:50%;padding:3px 1px;color:#fff;font-size:6px;}
 .feedback-box .form-horizontal{width:600px;margin:auto}
+.feedback-box .feedback-btn {cursor:pointer;position:relative;float:left;width:116px;height:28px;text-align: center;line-height: 28px;background:#f8f8f8;border-radius:20px;color:#333;font-size:14px;border:1px solid #d8d8d8;}
+.feedback-box .line{border-top:1px dashed #dadada;margin:16px 0  36px 0;}
+.feedback-box .nofile{float:left}
+.feedback-box .mgs-btn{height:28px;line-height:28px;}
+.feedback-box .mgs-btn .nofile{margin-left:14px;}
+.feedback-btn .change{position:absolute;left:0;top:0;opacity:0;width:116px;height:28px;text-align: center;line-height: 28px;}
+.feedback-box .marginbtn{margin-top:43px;}
+
+
 /* form-horizontal */
 .form-horizontal{width:100%}
 .form-group{margin-bottom:20px}
