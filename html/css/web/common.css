@@ -13,11 +13,8 @@ select::-ms-expand { display: none; }
 
 .banner_list_icons{position:relative;}
 .banner_list_icon{position: absolute;left:0;top:0;position: relative;background:url(../../images/web/arrow-down.svg) 100% 50% no-repeat;}
-.banner_list_icona:hover{
-    /* -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg); */
-}
+
+
 .clearfix:after{ content:""; clear:both; display:block; height:0}
 li{list-style:none}
 a{ color:#999; text-decoration:none; cursor:pointer; outline:0}
@@ -246,6 +243,7 @@ footer{width:100%;}
 .bottom-logo{position: absolute;text-align:right;bottom:20px;right:20px}
 .bottom-logo .logo{float:right}
 .bottom-logo p{font-size:13px;color:#999;float:right;width: 100%;}
+.bottom-tip{width:144px;height:58px;background:url('../../images/web/bottom-tip.svg') no-repeat center;position: absolute;margin-top:12px}
 
 /*---分页样式---*/
 .page-wrap {margin: 20px auto;padding: 10px 0;background:#fff;overflow: hidden;position: relative;}
@@ -281,7 +279,7 @@ footer{width:100%;}
 .video .video-box li{margin-bottom:24px;}
 
 /* product_detail */
-.product-detail{font-size:14px;color:#333;margin-top:35px;}
+.product-detail{font-size:14px;color:#333;margin-top:35px;padding-bottom:174px;border-bottom:1px solid #eaeaea;}
 .product-detail h1{font-size:28px;color:#333;font-weight: lighter;margin-bottom:19px;text-align:center;}
 .product-detail p{line-height:20px;}
 .product-detail img{margin:16px auto;display:block;}
@@ -295,7 +293,7 @@ footer{width:100%;}
 /* support_product_detail */
 
 /*---detail 1 CSS---*/
-.support-product-detail{margin-top:36px;margin-bottom:178px;}
+.support-product-detail{margin-top:36px;padding-bottom:178px;border-bottom:1px solid #E6E6E6;}
 .support-product-detail .inner-cons{float:left;width:300px;height:300px;}
 .support-product-detail .inner-cons img{display: block;width:300px;height:300px;}
 .support-product-detail .inner-cons-text{float:left;height:300px;width:700px;padding:35px 0 0 60px;}
@@ -305,7 +303,8 @@ footer{width:100%;}
 .support-product-detail .support-product-detail-link{float:left;margin-left:5px;color:#4A9FEA;}
 
 /*---detail 2 CSS---*/
-.support-product-detail .support-detail {border-bottom:1px solid #E6E6E6;margin-bottom:51px;}
+.support-product-detail .support-detail {margin-bottom:51px;position:relative;}
+.support-product-detail .support-detail .support-line{width:100%;height:1px;background:#e6e6e6;position:absolute;bottom:0;z-index:999;}
 .support-product-detail .wapper-list {position:relative;}
 .support-product-detail .icon-arrow1{margin:0 auto;font-size:9px;color:#999;display: block;}
 .support-product-detail .wapper-list li{width:200px;height:150px;float:left;text-align:center;cursor:pointer;padding-top:12px;font-weight:lighter}
@@ -350,18 +349,19 @@ footer{width:100%;}
 .support-product-detail .firmwares .firmwares-size{margin:0 231px 0 39px;}
 
 /* about */
-.about{margin-bottom:126px;}
+.about{padding-bottom:126px;border-bottom:1px solid #e6e6e6}
 .about img{display:block;width:100%;height:auto;}
 .about .about-title{font-size:24px;color:#333;text-align: center;margin-top:32px;margin-bottom:42px;}
 .about .about-description{font-size:14px;color:#999;}
 
 /* aboutnew */
-.aboutnew{margin-top:48px;margin-bottom:158px;}
+.aboutnew{margin-top:48px;padding-bottom:158px;border-bottom:1px solid #e6e6e6;}
 .aboutnew .about-new-list li {padding:0 22px 0 24px;cursor:pointer;}
 .aboutnew .about-new-list li:hover{box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);background-color: #fff; filter: progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.12), Direction=135, Strength=5);  }
 
 .aboutnew .about-new-cons {float:left;width:900px;margin-top:44px;position: relative}
 .aboutnew .about-new-imgs {float:right;width:200px;height:130px;margin:48px 0 24px 0;}
+.aboutnew .about-new-imgs img{display:block;width:200px;height:130px;}
 .aboutnew .about-new-data {float:left;}
 .aboutnew .about-new-day {font-size:28px;color:#999;display: block;}
 .aboutnew .about-new-list li:hover .about-new-day,.aboutnew .about-new-list li:hover .about-new-year{color:#333}
@@ -476,7 +476,7 @@ textarea.form-control{height:100px}
 .contact{padding-bottom:4px}
 
 /* aboutnew-detail */
-.aboutnew-detail{margin-bottom:276px;}
+.aboutnew-detail{padding-bottom:276px;border-bottom:1px solid #E6E6E6;}
 .aboutnew-detail .product-detail{margin-top:60px;}
 .aboutnew-detail .date {text-align:center;font-size:14px;color:#333;}
 .aboutnew-detail .product-detail h1{margin-bottom:49px;}

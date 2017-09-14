@@ -62,7 +62,7 @@ $(function() {
         if (scroH >= navH) {
             $(".support-detail").css({"position": "fixed", "top": 0, 'background': '#fff', 'zIndex': '99999'});
         } else if (scroH < navH) {
-            $(".support-detail").css({"position": "static"});
+            $(".support-detail").css({"position": "relative", 'zIndex': '88'});
         }
     })
     }
