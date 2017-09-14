@@ -442,14 +442,14 @@ footer{width:100%;}
 .feedback-box .file-list img{width:100%;height:auto;}
 .feedback-box .file-list .icon-arrow1{display:block;width:12px;height:9px;text-align:center;line-height:9px;position:absolute;bottom:2px;right:2px;background:#00B5F4;border-radius:50%;padding:3px 1px;color:#fff;font-size:6px;}
 .feedback-box .form-horizontal{width:600px;margin:auto}
-.feedback-box .feedback-btn {cursor:pointer;position:relative;float:left;width:116px;height:28px;text-align: center;line-height: 28px;background:#f8f8f8;border-radius:20px;color:#333;font-size:14px;border:1px solid #d8d8d8;}
+.feedback-box .feedback-btn {cursor:pointer;position:relative;float:left;width:116px;height:28px;text-align: center;line-height: 28px;background:#f8f8f8;border-radius:20px;color:#333;font-size:14px;background:#00B5F4;color:#fff;}
 .feedback-box .line{border-top:1px dashed #dadada;margin:16px 0  36px 0;}
 .feedback-box .nofile{float:left}
 .feedback-box .mgs-btn{height:28px;line-height:28px;}
 .feedback-box .mgs-btn .nofile{margin-left:14px;}
 .feedback-btn .change{position:absolute;left:0;top:0;opacity:0;width:116px;height:28px;text-align: center;line-height: 28px;}
 .feedback-box .marginbtn{margin-top:43px;}
-
+.feedback-box .icon-close{background:url(“../../images/web/close.svg”) center no-repeat;display:block;width:12px;height:9px;position:absolute;bottom:2px;right:2px;background:#00B5F4;border-radius:50%;padding:3px 1px;color:#fff;font-size:6px;}
 
 /* form-horizontal */
 .form-horizontal{width:100%}
