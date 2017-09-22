@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?17k869');
-  src:  url('fonts/icomoon.eot?17k869#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?17k869') format('truetype'),
-    url('fonts/icomoon.woff?17k869') format('woff'),
-    url('fonts/icomoon.svg?17k869#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?qoslpm');
+  src:  url('fonts/icomoon.eot?qoslpm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qoslpm') format('truetype'),
+    url('fonts/icomoon.woff?qoslpm') format('woff'),
+    url('fonts/icomoon.svg?qoslpm#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,57 +24,54 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search:before {
+.icon-video:before {
   content: "\e900";
 }
-.icon-video:before {
+.icon-arrow1:before {
   content: "\e901";
 }
-.icon-arrow1:before {
+.icon-down:before {
   content: "\e902";
 }
-.icon-down:before {
+.icon-emial:before {
   content: "\e903";
 }
-.icon-emial:before {
+.icon-fb:before {
   content: "\e904";
 }
-.icon-fb:before {
+.icon-feedback:before {
   content: "\e905";
 }
-.icon-feedback:before {
+.icon-firmwares:before {
   content: "\e906";
 }
-.icon-firmwares:before {
+.icon-google:before {
   content: "\e907";
 }
-.icon-google:before {
+.icon-goto:before {
   content: "\e908";
 }
-.icon-goto:before {
+.icon-location:before {
   content: "\e909";
 }
-.icon-location:before {
+.icon-manuals:before {
   content: "\e90a";
 }
-.icon-manuals:before {
+.icon-product-specification:before {
   content: "\e90b";
 }
-.icon-product-specification:before {
+.icon-security-code:before {
   content: "\e90c";
 }
-.icon-security-code:before {
+.icon-share:before {
   content: "\e90d";
 }
-.icon-share:before {
+.icon-tel:before {
   content: "\e90e";
 }
-.icon-tel:before {
+.icon-twitter:before {
   content: "\e90f";
 }
-.icon-twitter:before {
-  content: "\e910";
-}
 .icon-youtube:before {
-  content: "\e917";
+  content: "\e910";
 }

@@ -20,24 +20,25 @@ $(function () {
 })
 </script>
 <body>
-    <header class="public-header clearfix">
+    <header class="public-header clearfix transition4">
         <div class="header-m">
         <a class="logo"></a>
         <nav class="top-nav">
             <ul>
                 <li>
                     <div class="top-nav-button">
-                    <a href="#">ABOUT</a>
-                    <ul class="top-dropmenu transition-sp3">
-                        <li><a href="#">About Us</a><em>/</em></li>
-                        <li><a href="#">News</a><em>/</em></li>
-                        <li><a href="#">Honors</a></li>
-                    </ul>
+                        <a href="#">ABOUT<i class="icon-down"></i></a>
+                        <ul class="top-dropmenu transition-sp3">
+                            <li><a href="#">About Us</a><em>/</em></li>
+                            <li><a href="#">News</a><em>/</em></li>
+                            <li><a href="#">Honors</a></li>
+                        </ul>
+                        <div class="top-nav-bg transition-sp3"></div>
                     </div>
                 </li>
                 <li>
                     <div class="top-nav-button">
-                    <a  href="#">PRODUCT</a>
+                    <a  href="#">PRODUCT<i class="icon-down"></i></a>
                     <ul class="top-dropmenu transition-sp3">
                         <li><a href="#">All</a><em>/</em></li>
                         <li><a href="#">Kit</a><em>/</em></li>
@@ -45,16 +46,18 @@ $(function () {
                         <li><a href="#">Atomizer</a><em>/</em></li>
                         <li><a href="#">Accessories</a></li>
                     </ul>
+                    <div class="top-nav-bg transition-sp3"></div>
                     </div>
                 </li>
                 <li>
                     <div class="top-nav-button">
-                    <a  href="#">SUPPORT</a>
+                    <a  href="#">SUPPORT<i class="icon-down"></i></a>
                     <ul class="top-dropmenu transition-sp3">
                         <li><a href="#">Product Support</a><em>/</em></li>
                         <li><a href="#">Feedback</a><em>/</em></li>
                         <li><a href="#">Security Code</a></li>
                     </ul>
+                     <div class="top-nav-bg transition-sp3"></div>
                     </div>
                 </li>
                 <li><div class="top-nav-button"><a  href="#">VIDEO</a></div></li>
@@ -62,10 +65,11 @@ $(function () {
             </ul>
         </nav>
         </div>
+    
     </header>
     <main>
         <div class="product-detail-box">
-            <div class="product-detail-wrapper"> <a class="arrow-left" href="javascript:"></a> <a class="arrow-right" href="javascript:"></a>
+            <div class="product-detail-wrapper"><a class="arrow-left" href="javascript:"></a> <a class="arrow-right" href="javascript:"></a>
                 <div class="swiper-product clearfix">
                     <ul class="swiper-wrapper">
                         <li class="swiper-slide"><a><img  src="images/web/products/detail1.png"></a></li>
@@ -81,6 +85,40 @@ $(function () {
                 <img src="images/web/products/product_detail1.png" alt="">
                 <img src="images/web/products/product_detail2.png" alt="">
                 <img src="images/web/products/product_detail3.png" alt="">
+            </div>
+            <div class="wapper">
+                <ul class="wapper-list clearfix">
+                    <li class="transition-sp11 active1">
+                        <i class="icon-product-specification iconfonts1"></i>
+                        <p>Product Specification</p>
+                        <i class="icon-arrow1 transition1"></i>
+                    </li>
+                    <li class="transition-sp11">
+                        <i class="icon-video iconfonts1"></i>
+                        <p>Video</p>
+                        <i class="icon-arrow1 transition1"></i>
+                    </li>
+                    <li class="transition-sp11">
+                        <i class="icon-manuals iconfonts1"></i>
+                        <p>Manuals</p>
+                        <i class="icon-arrow1 transition1"></i>
+                    </li>
+                    <li class="transition-sp11">
+                        <i class="icon-firmwares iconfonts1"></i>
+                        <p>Firmwares</p>
+                        <i class="icon-arrow1 transition1"></i>
+                    </li>
+                    <li class="transition-sp11">
+                        <i class="icon-security-code iconfonts1"></i>
+                        <p>Security Code</p>
+                        <i class="icon-arrow1 transition1"></i>
+                    </li>
+                    <li class="transition-sp11">
+                        <i class="icon-feedback iconfonts1"></i>
+                        <p>Feedback</p>
+                        <i class="icon-arrow1 transition1"></i>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>

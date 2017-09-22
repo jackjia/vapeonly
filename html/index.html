@@ -22,6 +22,23 @@
         $(".video-box li").click(function () {
             $(this).videoWindow($(this).find("img").attr("video-url"))
         });
+        $(window).bind('scroll', function () {
+            var $scroll = $(this).scrollTop();
+            $(".title").each(function () {
+                var num = $(this).attr("id").replace("floor","");
+                var $floortop = $("#floor" + num).offset().top-100;
+                if ($floortop > $scroll) {
+                    console.log(1)
+                    $(".focus").removeClass("focus")
+                    $("#floor" + num).addClass('focus');
+                    return false;
+                }
+                else{
+                    console.log(2)
+                    $(".focus").removeClass("focus");
+                }
+            });
+        })
     })
 </script>
 <body>
@@ -32,18 +49,18 @@
         <ul>
             <li>
                 <div class="top-nav-button">
-                <a href="#">ABOUT</a>
-                <ul class="top-dropmenu transition-sp3">
-                    <li><a href="#">About Us</a><em>/</em></li>
-                    <li><a href="#">News</a><em>/</em></li>
-                    <li><a href="#">Honors</a></li>
-                </ul>
-                <div class="top-nav-bg transition-sp3"></div>
+                    <a href="#">ABOUT<i class="icon-down"></i></a>
+                    <ul class="top-dropmenu transition-sp3">
+                        <li><a href="#">About Us</a><em>/</em></li>
+                        <li><a href="#">News</a><em>/</em></li>
+                        <li><a href="#">Honors</a></li>
+                    </ul>
+                    <div class="top-nav-bg transition-sp3"></div>
                 </div>
             </li>
             <li>
                 <div class="top-nav-button">
-                <a  href="#">PRODUCT</a>
+                <a  href="#">PRODUCT<i class="icon-down"></i></a>
                 <ul class="top-dropmenu transition-sp3">
                     <li><a href="#">All</a><em>/</em></li>
                     <li><a href="#">Kit</a><em>/</em></li>
@@ -56,7 +73,7 @@
             </li>
             <li>
                 <div class="top-nav-button">
-                <a  href="#">SUPPORT</a>
+                <a  href="#">SUPPORT<i class="icon-down"></i></a>
                 <ul class="top-dropmenu transition-sp3">
                     <li><a href="#">Product Support</a><em>/</em></li>
                     <li><a href="#">Feedback</a><em>/</em></li>
@@ -83,7 +100,7 @@
         <div class="pagination"></div>
     </div>
     <div class="product-floor">
-        <div class="title">Product</div>
+        <div class="title" id="floor1">Product</div>
         <ul class="clearfix">
             <li class="transition2">
                 <div class="pro-card">
@@ -133,12 +150,12 @@
         </ul>
     </div>
     <div class="about-floor">
-        <div class="title">About</div>
+        <div class="title" id="floor2">About</div>
         <p>VapeOnly is an electronic cigarette original brand vendor & manufacturer. We started our business in late 2011 and have been concentrating on ecigarette products for more than three years…</p>
        <a class="more-btn transition-sp1">MORE <i class="icon-arrow1 transition-sp1"></i></a>
     </div>
     <div class="video-floor video-box">
-        <div class="title">Video</div>
+        <div class="title" id="floor3">Video</div>
         <ul class="clearfix">
             <li><a><i class="icon-play transition-sp2"></i><img video-url="https://www.youtube.com/embed/tT_p5jMrJgc" src="images/web/products/video-1.jpg"> </a><p>vAres Review by Choo Choo Vapes</p></li>
             <li><a><i class="icon-play transition-sp2"></i><img video-url="https://www.youtube.com/embed/tT_p5jMrJgc" src="images/web/products/video-2.jpg"> </a><p>vAres Review by Choo Choo Vapes</p></li>
@@ -147,7 +164,7 @@
         <p class="btn-row clearfix"><a class="more-btn transition-sp1">MORE <i class="icon-arrow1 transition-sp1"></i></a></p>
     </div>
     <div class="news-floor">
-       <div class="title">News</div>
+       <div class="title" id="floor4">News</div>
             <div class="swiper-news clearfix">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
@@ -212,7 +229,7 @@
             <p class="btn-row clearfix"><a class="more-btn transition-sp1">MORE <i class="icon-arrow1 transition-sp1"></i></a></p>
     </div>
     <div class="comments-floor">
-        <div class="title">Buyer’s Comments</div>
+        <div class="title" id="floor5">Buyer’s Comments</div>
         <div class="comments-wrapper"> <a class="arrow-left" href="javascript:"></a> <a class="arrow-right" href="javascript:"></a>
             <div class="swiper-comments clearfix">
                 <ul class="swiper-wrapper">
@@ -261,6 +278,8 @@
         </div>
         <div class="share-box">
             <i class="icon-share"></i>
+            <div class="addthis_inline_share_toolbox share" data-url="www.vapeonly.com" data-title="vapeonly" data-description="vapeonly" data-media="vapeonly"></div>
+            
             <ul>
                 <li>Follow Us On Social Networks</li>
                 <li><a class="icon-fb"></a><a class="icon-twitter"></a><a class="icon-google"></a><a class="icon-youtube"></a> </li>
