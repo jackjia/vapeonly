@@ -32,13 +32,13 @@ $.fn.videoWindow=function(url) {
     $(videobody).appendTo("body")
     $("body").css("overflow","hidden");
     setTimeout(function () {
-        $(".videobox iframe").addClass("videobox-over")
+        $(".videobox iframe").addClass("videobox-over");
     },500)
 
     $(".video-masker,.icon-close").click(function(){
         $("body").removeAttr("style");
         $(".videobox").remove();
-        $(".blur").removeClass("blur")
+        $(".blur").removeClass("blur");
     })
 }
 

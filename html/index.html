@@ -28,13 +28,11 @@
                 var num = $(this).attr("id").replace("floor","");
                 var $floortop = $("#floor" + num).offset().top-100;
                 if ($floortop > $scroll) {
-                    console.log(1)
                     $(".focus").removeClass("focus")
                     $("#floor" + num).addClass('focus');
                     return false;
                 }
                 else{
-                    console.log(2)
                     $(".focus").removeClass("focus");
                 }
             });
