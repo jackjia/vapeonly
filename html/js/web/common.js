@@ -60,17 +60,29 @@ $(function() {
 
         //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定
         if (scroH >= navH) {
-            $(".support-detail").css({"position": "fixed", "top": 0, 'background': '#fff', 'zIndex': '99999'});
+            $(".support-detail").removeClass('support-active');
+            $(".support-detail").addClass('support-active');
         } else if (scroH < navH) {
-            $(".support-detail").css({"position": "relative", 'zIndex': '88'});
+            $(".support-detail").removeClass('support-active');
         }
     })
     }
-    //  分页点击效果
-
-    // $(".page li a").click(function(){
-    //     $(this).addClass('focus')
-    // })
+    console.log(navigator.userAgent)
+    if(navigator.userAgent.indexOf("MSIE")>0){   
+        if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
+            alert("您当前浏览器版本过低，请升级浏览器");        
+        }   
+        if(navigator.userAgent.indexOf("MSIE 7.0")>0){  
+            alert("您当前浏览器版本过低，请升级浏览器");       
+        }   
+        if(navigator.userAgent.indexOf("MSIE 9.0")>0 && !window.innerWidth){//这里是重点，你懂的
+            alert("您当前浏览器版本过低，请升级浏览器");     
+        }   
+        if(navigator.userAgent.indexOf("MSIE 9.0")>0){  
+            alert("您当前浏览器版本过低，请升级浏览器");    
+        } 
+        
+    } 
 })
 
 
