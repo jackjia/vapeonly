@@ -14,6 +14,19 @@
     <script type="text/javascript" src="js/web/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/web/common.js"></script>
 </head>
+
+<script>
+    $(function(){
+        $(".products-nav li a").click(function(){
+            if($(this).html()=='All'){
+                $(".products-box").removeClass('product-notall');
+            } else {
+                $(".products-box").addClass('product-notall');
+            }
+            
+        })
+    })
+</script>
 <body>
     <header class="public-header clearfix transition4">
         <div class="header-m">

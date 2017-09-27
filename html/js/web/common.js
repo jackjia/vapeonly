@@ -70,6 +70,15 @@ $(function() {
         }
     })
     }
+    
+     $("body").click(function(e){
+        if ( e && e.preventDefault ) 
+            e.preventDefault(); 
+        //IE中阻止函数器默认动作的方式 
+        else
+            window.event.returnValue = false; 
+        return false; 
+     })
     console.log(navigator.userAgent)
     if(navigator.userAgent.indexOf("MSIE")>0){   
         if(navigator.userAgent.indexOf("MSIE 6.0")>0){   
